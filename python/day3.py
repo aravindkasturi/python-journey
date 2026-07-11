@@ -41,29 +41,29 @@
 # else:
 #     print("pay ₹15")
 
-print("Welcome to PIZZAHUT!")
-size=input("What size do you want? S, M, or L: ")
-pepperoni=input("Do you want pepperoni? Y or N: ")
-extra_cheese=input("Do you want extra cheese? Y or N: ")
-bill=0
-if size=='S':
-    bill=15
-    if pepperoni=='Y':
-        bill+=2
-    if extra_cheese=='Y':
-        bill+=1
-    print(f"price is ₹{bill}")
-if size=='M':
-    bill=20
-    if pepperoni=='Y':
-        bill+=3
-    if extra_cheese=='Y':
-        bill+=1
-    print(f"price is ₹{bill}")
-if size=='L':
-    bill=25
-    if pepperoni=='Y':
-        bill+=3
-    if extra_cheese=='Y':
-        bill+=1
-    print(f"price is ₹{bill}")
+# print("Welcome to PIZZAHUT!")
+# size=input("What size do you want? S, M, or L: ")
+# pepperoni=input("Do you want pepperoni? Y or N: ")
+# extra_cheese=input("Do you want extra cheese? Y or N: ")
+# bill=0
+# if size=='S':
+#     bill=15
+#     if pepperoni=='Y':
+#         bill+=2
+#     if extra_cheese=='Y':
+#         bill+=1
+#     print(f"price is ₹{bill}")
+# if size=='M':
+#     bill=20
+#     if pepperoni=='Y':
+#         bill+=3
+#     if extra_cheese=='Y':
+#         bill+=1
+#     print(f"price is ₹{bill}")
+# if size=='L':
+#     bill=25
+#     if pepperoni=='Y':
+#         bill+=3
+#     if extra_cheese=='Y':
+#         bill+=1
+#     print(f"price is ₹{bill}")
