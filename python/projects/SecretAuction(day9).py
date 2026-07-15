@@ -1,15 +1,20 @@
 import auctionlogo
 print(auctionlogo.logo)
-dic={}
+bid={}
+def find_max():
+    winner=max(bid,key=bid.get)
+    print(f"{winner} is the winner")
 
-def again():
-    name=input("What is your name? ")
-    bid=int(input("What's your bid? ₹"))
-    dic[name]=bid
-while True:
-    again()
-    another=input("Are there other bidders yes or no? ").lower()
-    if another=="no":
-        break
-winner=max(dic,key=dic.get)
-print(f"{winner} won the bid with bid amount{winner[0]}")
+con=True
+while con:
+    name=input("Enter name: ")
+    amnt=int(input("Enter bid amount ₹"))
+    bid[name]=amnt
+    con=input("Any other bidder yes or no ").lower()
+    if con=="no":
+        con=False
+        find_max()
+    elif con =="yes":
+        print("\n"*100)
+    else:
+        print("invalid")
