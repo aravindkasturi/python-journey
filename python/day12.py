@@ -25,14 +25,36 @@ program"""
 # print(new_enemy)  # can be accessed outside block also
 
 # prime
-def is_prime(num):
-    if num==1:
-        return False
-    if num==2:
-        return True
-    for i in range(2,num):
-        if num%i==0:
-            return False
-    return True
-out=is_prime(int(input()))
-print(out)
+
+# def is_prime(num):
+#     if num==1:
+#         return False
+#     if num==2:
+#         return True
+#     for i in range(2,num):
+#         if num%i==0:
+#             return False
+#     return True
+# out=is_prime(int(input()))
+# print(out)
+
+#how to modify global variables inside a fun
+#we can use global keyword and modify
+
+# enemies=1
+
+# def inside():
+#     global enemies # we used global keyword to modify it inside a function
+#     enemies+=1
+#     print(enemies)
+# inside()
+
+#or
+
+enemies=1
+
+def inside(enemy):
+    
+    print (enemy+1)
+    
+inside(enemies)
