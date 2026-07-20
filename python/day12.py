@@ -51,10 +51,17 @@ program"""
 
 #or
 
-enemies=1
+# enemies=1
 
-def inside(enemy):
+# def inside(enemy):
     
-    print (enemy+1)
+#     print (enemy+1)
     
-inside(enemies)
+# inside(enemies)
+
+#mainly global scope is used to declare constants like when we dont need to change the value much often
+#for exmpl
+pi=3.1415
+def pie():
+    print(pi)
+pie()
