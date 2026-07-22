@@ -1,2 +1,1 @@
-#day13
-print("hello")
+#debugging - process of removing bugs from code
