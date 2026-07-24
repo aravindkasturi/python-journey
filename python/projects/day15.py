@@ -1,1 +1,8 @@
 #cofee machine
+"""
+1.print report
+2.check resources sufficient?
+3.process coins
+4.check transaction successful?
+5.make coffee
+"""
