@@ -1,4 +1,4 @@
-from main import MENU, resources
+from main import MENU, resources, money
 import sys
 
 
@@ -45,32 +45,58 @@ def process_coins():
     nickles = float(input("How many nickles? "))
     pennies = float(input("How many pennies? "))
 
-    total_coins = quarters + dimes + nickles + pennies
+    total_coins = (
+    quarters * 0.25 +
+    dimes * 0.10 +
+    nickles * 0.05 +
+    pennies * 0.01)
+    is_transaction_successful(total_coins)
 
+def is_transaction_successful(total_coins):
+    global money
     if total_coins == MENU[user_input]["cost"]:
         print("Coins are sufficient")
-
+        money+=total_coins
+        make_coffee(user_input)
     elif total_coins > MENU[user_input]["cost"]:
         x = MENU[user_input]["cost"]
+        money+=x
         print(f"Coins inserted more. Money {total_coins-x} will be refunded")
-
+        make_coffee(user_input)
     else:
         print("Coins are less. Money refunded")
-
+def make_coffee(user_input):
+    if user_input=="espresso":
+        resources["water"] -= MENU[user_input]["ingredients"]["water"]
+        resources["coffee"] -= MENU[user_input]["ingredients"]["coffee"]
+    elif user_input=="latte":
+        resources["water"] -= MENU[user_input]["ingredients"]["water"]
+        resources["milk"] -= MENU[user_input]["ingredients"]["milk"]
+        resources["coffee"] -= MENU[user_input]["ingredients"]["coffee"]
+    elif user_input=="cappuccino":
+        resources["water"] -= MENU[user_input]["ingredients"]["water"]
+        resources["milk"] -= MENU[user_input]["ingredients"]["milk"]
+        resources["coffee"] -= MENU[user_input]["ingredients"]["coffee"]        
+    print(f"Here is your {user_input} ☕️. Enjoy!")
 
 # ---------------- Main Program ----------------
+again=True
+while True:
+    user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
-user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
+    if user_input == "report":
+        for i, j in resources.items():
+            print(f"{i}: {j}")
+        print(f"money: {money}")
+        
 
-if user_input == "report":
-    for i, j in resources.items():
-        print(f"{i}: {j}")
+    elif user_input == "off":
+        sys.exit()
 
-elif user_input == "off":
-    sys.exit()
+    elif user_input == "espresso" or user_input == "latte" or user_input == "cappuccino":
+        is_resources_sufficient(resources, MENU)
 
-elif user_input == "espresso" or user_input == "latte" or user_input == "cappuccino":
-    is_resources_sufficient(resources, MENU)
+    else:
+        print("Invalid input")
 
-else:
-    print("Invalid input")
+

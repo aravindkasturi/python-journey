@@ -29,4 +29,4 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
-print(MENU["espresso"]["ingredients"]["water"])
+money=0
