@@ -22,3 +22,15 @@ easier to write, understand, reuse, and maintain.
 #     speed=0
 
 #python packages
+# a package is simply a folder that contains related Python modules (files).
+# if a folder contain __init__.py it is a package
+from prettytable import PrettyTable  #installed it using pip install prettytable
+
+table = PrettyTable()
+
+table.field_names = ["Name", "Age","IPL Team"]
+
+table.add_row(["Aravind", 23, "RCB"])
+table.add_row(["Rahul", 24,"DC"])
+table.align='l'  #attribute
+print(table)
