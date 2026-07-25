@@ -80,7 +80,6 @@ def make_coffee(user_input):
     print(f"Here is your {user_input} ☕️. Enjoy!")
 
 # ---------------- Main Program ----------------
-again=True
 while True:
     user_input = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
