@@ -23,21 +23,30 @@ himmi.color("Green")
 #     himmi.forward(100)
 #     himmi.right(72)   #360//5sides=72
 
+#random shapes with random colors
+# colors=["lime green","green yellow", "pale green", "wheat","yellow",
+#         "red","navajo white","dark goldenrod","dark green","orange red"]
+
+# def draw_shape(num_sides):
+#     angle=360//num_sides
+#     for _ in range(num_sides):
+#         himmi.forward(50)
+#         himmi.right(angle)
+
+# for shape_side_n in range(3,10):
+#     himmi.color(random.choice(colors))
+#     draw_shape(shape_side_n)
+
+#random walk
 colors=["lime green","green yellow", "pale green", "wheat","yellow",
         "red","navajo white","dark goldenrod","dark green","orange red"]
-
-def draw_shape(num_sides):
-    angle=360//num_sides
-    for _ in range(num_sides):
-        himmi.forward(50)
-        himmi.right(angle)
-
-for shape_side_n in range(3,10):
+directions=[0,90,180,270]
+for _ in range(100):
+    himmi.pensize(15)
+    himmi.speed("fastest")
     himmi.color(random.choice(colors))
-    draw_shape(shape_side_n)
-
-
-
+    himmi.forward(30)
+    himmi.setheading(random.choice(directions))
 
 
 
