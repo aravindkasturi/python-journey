@@ -1,10 +1,10 @@
-from turtle import Turtle, Screen
-import random
+# from turtle import Turtle, Screen
+# import random
 
-himmi=Turtle()
+# himmi=Turtle()
 
-himmi.shape("turtle")
-himmi.color("Green")
+# himmi.shape("turtle")
+# himmi.color("Green")
 
 # sqaure
 # for _ in range(4):
@@ -47,15 +47,17 @@ himmi.color("Green")
 #     himmi.color(random.choice(colors))
 #     himmi.forward(30)
 #     himmi.setheading(random.choice(directions))
-himmi.speed("fastest")
-for _ in range(100):
-    himmi.circle(50)
-    himmi.left(10)
+
+#spirograph
+# himmi.speed("fastest")
+# for _ in range(100):
+#     himmi.circle(50)
+#     himmi.left(10)
 
 
 
 
 
-screen=Screen()
-screen.exitonclick()  #this wont disappear window unless click
+# screen=Screen()
+# screen.exitonclick()  #this wont disappear window unless click
 
