@@ -15,6 +15,10 @@ def turn_left():
     himi.setheading(new_heading)
 def clear():
     himi.clear()
+    himi.penup()
+    himi.home()
+    himi.pendown()
+    
 def circle():
     himi.circle(60)
     
