@@ -38,17 +38,19 @@ himmi.color("Green")
 #     draw_shape(shape_side_n)
 
 #random walk
-colors=["lime green","green yellow", "pale green", "wheat","yellow",
-        "red","navajo white","dark goldenrod","dark green","orange red"]
-directions=[0,90,180,270]
+# colors=["lime green","green yellow", "pale green", "wheat","yellow",
+#         "red","navajo white","dark goldenrod","dark green","orange red"]
+# directions=[0,90,180,270]
+# for _ in range(100):
+#     himmi.pensize(15)
+#     himmi.speed("fastest")
+#     himmi.color(random.choice(colors))
+#     himmi.forward(30)
+#     himmi.setheading(random.choice(directions))
+himmi.speed("fastest")
 for _ in range(100):
-    himmi.pensize(15)
-    himmi.speed("fastest")
-    himmi.color(random.choice(colors))
-    himmi.forward(30)
-    himmi.setheading(random.choice(directions))
-
-
+    himmi.circle(50)
+    himmi.left(10)
 
 
 
