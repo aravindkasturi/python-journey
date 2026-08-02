@@ -14,15 +14,18 @@ for turtle in range(3):
     ak.color("white")
     ak.goto(pos[turtle])
     turtle_list.append(ak)
-    ak.pendown()
+    # ak.pendown()
 
 game_is_on=True
 while game_is_on:
     screen.update()
     time.sleep(0.1)   #delay
-    for i in range(2,0,-1):
-        turtle_list[i].goto(pos[i])
-        
+    for i in range(len(turtle_list)-1,0,-1):
+        new_x=turtle_list[i-1].xcor()
+        new_y=turtle_list[i-1].ycor()
+        turtle_list[i].goto(x=new_x,y=new_y)
+    turtle_list[0].forward(20)
+    turtle_list[0].left(90)
 
         
 
