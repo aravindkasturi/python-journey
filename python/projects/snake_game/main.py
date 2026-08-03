@@ -36,10 +36,10 @@ while game_is_on:
         exit()
 
     #detect collision with tail
-    for turtle in snake.turtle_list:
-        if turtle == snake.head:
-            pass
-        elif snake.head.distance(turtle)<10:
+    for turtle in snake.turtle_list[1:]:
+        # if turtle == snake.head:
+        #     pass
+        if snake.head.distance(turtle)<10:
             game_is_on=False
             exit()
     snake.move()
