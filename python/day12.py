@@ -61,7 +61,7 @@ program"""
 
 #mainly global scope is used to declare constants like when we dont need to change the value much often
 #for exmpl
-pi=3.1415
-def pie():
-    print(pi)
-pie()
+# pi=3.1415
+# def pie():
+#     print(pi)
+# pie()

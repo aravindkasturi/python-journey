@@ -1,5 +1,5 @@
 import random
-import logocap1
+import python.capstone.BlackJack.logocap1 as logocap1
 
 print(logocap1.logo)
 
