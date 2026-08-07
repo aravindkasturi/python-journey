@@ -33,7 +33,7 @@ while game_is_on:
     #detect collision with wall
     if snake.head.xcor()>280 or snake.head.xcor()<-280 or snake.head.ycor()>280 or snake.head.ycor()<-280:
         game_is_on=False
-        exit()
+        score.game_over()
 
     #detect collision with tail
     for turtle in snake.turtle_list[1:]:
