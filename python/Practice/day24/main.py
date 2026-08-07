@@ -12,10 +12,11 @@
 #     print(contents)
 
 #write
-with open("my_file.txt",mode="a") as file:
-    file.write("\nMy name is Aravind")
+# with open("my_file.txt",mode="a") as file:
+#     file.write("\nMy name is Aravind")
 
-#when we try to open a file in w mode and if that file doesnt exist it will create if
-with open("new_file.txt",mode="w")as file:
-    file.write("New file")
+#when we try to open a file in w mode and if that file doesnt exist it will create if only in write mode
+# with open("new_file.txt",mode="w")as file:
+#     file.write("New file")
+
 
