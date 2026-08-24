@@ -48,5 +48,5 @@
 # print(int(bmi))
 
 #fstrings
-score=12
-print(f"your score in {score}")
+# score=12
+# print(f"your score in {score}")

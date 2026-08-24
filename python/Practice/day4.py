@@ -17,7 +17,9 @@ import random
 # a.append("VK") --> appends single item at the end of the list
 #extend --> adds bunch of item not need to be only list it can be tuple also
 
-a=input("Enter names: ").split()
-b=len(a)
-print(a[random.randint(0,b)])
+# a=input("Enter names: ").split()
+# b=len(a)
+# print(a[random.randint(0,b)])
+#in simple to pick randon item from list
+# use random.choice()
 

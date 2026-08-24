@@ -23,15 +23,15 @@
 #     key:{} #dict
 # }
  
-travel_vlog={
-    "Andhra":{
-        "cities_visited":["Vijayawada","Visakhapatnam","Guntur"],
-        "total_visits":3
-    },
-    "Tamilnadu":{
-        "cities_visited":["Chennai","Kanchipuram","Mahabalipuram"],
-        "total_visits":3
-    }
-}
-print(travel_vlog["Andhra"]["cities_visited"][0])
+# travel_vlog={
+#     "Andhra":{
+#         "cities_visited":["Vijayawada","Visakhapatnam","Guntur"],
+#         "total_visits":3
+#     },
+#     "Tamilnadu":{
+#         "cities_visited":["Chennai","Kanchipuram","Mahabalipuram"],
+#         "total_visits":3
+#     }
+# }
+# print(travel_vlog["Andhra"]["cities_visited"][0])
 

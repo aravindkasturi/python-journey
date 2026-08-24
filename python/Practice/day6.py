@@ -1,5 +1,7 @@
 #functions
 
-def my_fun():
-    print("Hello")
-my_fun()
+# def my_fun():
+#     print("Hello")
+# my_fun()
+
+#while loop
