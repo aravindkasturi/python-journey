@@ -1,0 +1,3 @@
+amazon.com | aravind@email.com | aravind2027
+google.com | aravind@email.com | aravind2028
+flipkart.com | aravind@email.com | aravind2026
